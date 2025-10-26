@@ -1,0 +1,127 @@
+.recipe-list h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #444;
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-content {
+  padding: 1.5rem;
+}
+
+.recipe-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.ingredient-match {
+  margin-bottom: 1.5rem;
+}
+
+.match-section {
+  margin-bottom: 1rem;
+}
+
+.match-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+}
+
+.ingredient-tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ingredient-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.ingredient-tag.used {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #6ee7b7;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+.ingredient-tag.missed {
+  background-color: rgba(100, 108, 255, 0.2);
+  color: #a5b4fc;
+  border: 1px solid rgba(100, 108, 255, 0.4);
+}
+
+.view-recipe-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  text-align: center;
+  width: 100%;
+}
+
+.view-recipe-button:hover {
+  background-color: #535bf2;
+}
+
+.no-recipes {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border: 2px dashed #444;
+}
+
+.no-recipes p {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.no-recipes-hint {
+  font-size: 1rem !important;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+}
