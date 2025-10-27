@@ -106,4 +106,4 @@ I used **Claude (Sonnet 4)** to help with:
 - Meal planning calendar
 
 ## What I Learned
-This project taught me how to structure React apps with multiple components, work with external APIs, handle async operations, and implement good UX with loading/error states. I learned that AI tools are excellent for boilerplate code and debugging but require understanding the fundamentals to fix edge cases. Most importantly, I learned that starting with a specific problem leads to better solutions than starting with "I want to build X technology."
+This project taught me how to structure React apps with multiple components, handle async operations, and implement good UX with loading/error states. I learned that AI tools are excellent for boilerplate code and debugging but require understanding the fundamentals to fix edge cases. Most importantly, I learned that starting with a specific problem leads to better solutions than starting with "I want to build X technology."
