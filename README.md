@@ -22,6 +22,7 @@ The app color-codes your ingredients by urgency (red for "use today!", yellow fo
 - ✅ **Auto-sorting** by expiration date so urgent items appear first
 - ✅ **One-click recipe search** using your current ingredients
 - ✅ **Smart recipe matching** that shows which ingredients you have vs. need
+- ✅ **Flexible ingredient matching** uses keywords to maximize recipe options - be specific (e.g., "chicken breast") for targeted results
 - ✅ **Delete ingredients** once you've used them
 - ✅ **Loading states** while fetching recipes
 - ✅ **Error handling** for API failures
@@ -87,7 +88,12 @@ I used **Claude (Sonnet 4)** to help with:
 **Color coding**: Claude showed how to use functions to determine CSS classes conditionally. I learned early returns make code more readable than nested if/else. Modified: Changed urgency thresholds from 0/3/7 days to 0/2/5 days based on my actual food waste patterns.
 
 ## Screenshots
-[Screenshots to be added]
+
+### App with Ingredients
+![FridgeSaver showing color-coded ingredients](src/assets/Fridge-List.png)
+
+### Recipe Results  
+![Recipe search results](src/assets/Recipe-List.png)
 
 ## Future Improvements
 - Add local storage to persist ingredients between sessions
